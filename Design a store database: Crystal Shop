@@ -1,0 +1,37 @@
+/** Crystal_Shop:
+Fluorite Tumbles, (6);
+Raw White Calcite, (10);
+Moss Agate Towers, (5);
+Howlite Tumbles, (4)
+Amethyst Druzzy Clusters, (7);
+Blue Calcite, (2);
+Peacock Ore, (8);
+Green Aventurine, (12);
+Jasper Arrowheads, (11);
+Blue Sodalite, (3);
+Lepidolite Moon, (1);
+Rose Quartz Towers, (4);
+Sodalite Hearts, (3);
+Pink Tourmaline Hearts (5);
+Flower Agate Flames, (2);
+**/
+
+CREATE TABLE crystal_shop (ID INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, rating INTEGER);
+INSERT INTO crystal_shop VALUES (1, "Flourite Tumbles", 6, 2.99, 4);
+INSERT INTO crystal_shop VALUES (2, "Raw White Calcite", 10, 1.99, 3);
+INSERT INTO crystal_shop VALUES (3, "Moss Agate Towers", 5, 7.99, 5);
+INSERT INTO crystal_shop VALUES (4, "Howlite Tumbles", 4, 2.99, 4);
+INSERT INTO crystal_shop VALUES (5, "Amethyst Druzzy Clusters", 7, 5.99, 5);
+INSERT INTO crystal_shop VALUES (6, "Blue Calcite", 2, 1.99, 3);
+INSERT INTO crystal_shop VALUES (7, "Peacock Ore", 8, 3.99, 5);
+INSERT INTO crystal_shop VALUES (8, "Green Aventurine", 12, 2.99, 4);
+INSERT INTO crystal_shop VALUES (9, "Jasper Arrowhead", 11, 5.99, 5);
+INSERT INTO crystal_shop VALUES (10, "Blue Sodalite", 3, 2.99, 4);
+INSERT INTO crystal_shop VALUES (11, "Lepidolite Moon", 1, 9.99, 5);
+INSERT INTO crystal_shop VALUES (12, "Rose Quartz Towers", 4, 7.99, 5);
+INSERT INTO crystal_shop VALUES (13, "Sodalite Hearts", 3, 4.99, 5);
+INSERT INTO crystal_shop VALUES (14, "Pink Tourmaline Hearts", 5, 4.99, 5);
+INSERT INTO crystal_shop VALUES (15, "Flower Agate Flames", 2, 7.99, 5);
+
+SELECT * FROM crystal_shop ORDER BY price;
+SELECT SUM(price) FROM crystal_shop;
