@@ -1,0 +1,28 @@
+/* What does the app's SQL look like? */
+
+CREATE TABLE noom (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    food TEXT,
+    calories INTEGER);
+    
+INSERT INTO noom (name, food, calories)
+    VALUES ("Kristin", "Grapes", 34);
+INSERT INTO noom (name, food, calories)
+    VALUES ("Kristin", "Meatball Slider", 290);
+INSERT INTO noom (name, food, calories)
+    VALUES ("Kristin", "Granola Bar", 110);
+INSERT INTO noom (name, food, calories)
+    VALUES ("Kristin", "Pepperoni Pizza", 700);
+    
+SELECT * FROM noom;
+
+UPDATE noom SET calories = 350
+WHERE id = 4;
+
+SELECT * FROM noom;
+
+DELETE FROM noom
+WHERE id = 4;
+
+SELECT * FROM noom;
